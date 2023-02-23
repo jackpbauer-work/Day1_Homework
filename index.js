@@ -1,22 +1,21 @@
 //TODO: Assign corresponding variables
 /////////////////////////////////////////////////////
-let myName = ""
-let myAge = 0
-let myCity = ""
+let myName = "Jack"
+let myAge = 29
+let myCity = "New York"
 /////////////////////////////////////////////////////
 const myObj = {
     name: myName,
     age: myAge,
-    city: myCity
+    city: myCity,
 }
 
 //TODO: Print the name, age, and city inside myObj using dot 
 //TODO: notation.
 //////////////////////////////////////////////////////
-
-
-
-
+console.log(myObj.name)
+console.log(myObj.age)
+console.log(myObj.city)
 
 /////////////////////////////////////////////////////
 
@@ -41,7 +40,7 @@ const arrayOfObjects = [
 //TODO: Print out Alex's name, age and city
 /////////////////////////////////////////////////////
 
-
+console.log[arrayOfObjects[1].name]
 
 
 
@@ -50,13 +49,17 @@ const arrayOfObjects = [
 //TODO: print out all names
 /////////////////////////////////////////////////////
 
-
+arrayOfObjects.forEach (employee => {
+    console.log(employee.name)
+})
 
 
 /////////////////////////////////////////////////////
 //TODO: Iterate through arrayOfOjbects using .map and
 //TODO: increment everyone's age by one
 //! Remember, map needs a return value
-const incrementYear = arrayOfObjects.map(/*code goes here*/)
+const incrementYear = arrayOfObjects.map(employee => {
+    return employee.age + 1
+})
 console.log(incrementYear)
 
